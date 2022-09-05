@@ -1,6 +1,9 @@
 const Blank = () => {
-    return(
-        <div>404 - Maaf halaman yang anda tuju tidak ada, silahkan cari kembali ke halaman sebelumnya</div>
-    )
-}
- export default Blank
+  return (
+    <div>
+      <h1>404</h1>
+      <p>Maaf halaman yang anda cari tidak ada</p>
+    </div>
+  );
+};
+export default Blank;

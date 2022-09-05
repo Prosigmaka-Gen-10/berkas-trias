@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const About = () => {
   const [nama, setNama] = useState();
   const [hari, setHari] = useState(Date.now);
-  const [gender, setGender] = useState("l");
+  const [gender, setGender] = useState();
 
   function handleInputNama(e) {
     setNama(e.target.value);
@@ -13,12 +13,13 @@ const About = () => {
     const data = {
       nama: nama,
       hari: hari,
-      gender: gender
-    }
-    console.log(data)
+      gender: gender,
+    };
+    console.log(data);
   }
   return (
     <>
+      <h1>About</h1>
       <label>
         Nama Anda: <br />
         <input type="text" onChange={handleInputNama} value={nama} />

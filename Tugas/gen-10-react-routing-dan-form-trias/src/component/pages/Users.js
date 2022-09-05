@@ -20,6 +20,7 @@ export default function Users() {
 
   return (
     <div>
+      <h1>Data User</h1>
       <p>Use Params</p>
       <ul>
         {users.map((item) => (
@@ -35,12 +36,13 @@ export default function Users() {
           <button onClick={() => setSearchParams({ filter: "active" })}>
             Active Users
           </button>
+          <span>  </span>
           <button onClick={() => setSearchParams({})}>Reset Filters</button>
         </div>
         {showActiveUsers ? (
-          <h2>Show Active Users</h2>
+          <h3>Show Active Users</h3>
         ) : (
-          <h2>Select to Active Users</h2>
+          <h3>Select to Active Users</h3>
         )}
       </div>
     </div>
