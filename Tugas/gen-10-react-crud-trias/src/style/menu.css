@@ -1,0 +1,29 @@
+P {
+    margin-left: 3rem;
+  }
+  
+  table {
+    border: 2px solid indigo;
+    border-radius: 5px;
+    margin-left: 25rem;
+  }
+  
+  th {
+    border-bottom: 1px solid black;
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+  button {
+      background-color: #33358b; /* Green */
+      border: none;
+      color: white;
+      text-align: center;
+      border-radius: 5rem;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      cursor: pointer;
+    }
