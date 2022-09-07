@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "../../style/menu.css";
 
 const ListMenu = () => {
@@ -30,21 +31,21 @@ const ListMenu = () => {
     if (formInput.id) {
       updateMenu();
     } else {
-      createMenu();
+      // createMenu();
     }
     setFormInput({ ...originalForm });
   }
 
-  async function createMenu() {
-    try {
-      await axios.post("http://localhost:3001/users", formInput);
-      getAllMenu();
-      alert("data berhasil di tambah");
-    } catch (error) {
-      console.log("error");
-      alert("ada masalah saat mengambil data")
-    }
-  }
+  // async function createMenu() {
+  //   try {
+  //     await axios.post("http://localhost:3001/users", formInput);
+  //     getAllMenu();
+  //     alert("data berhasil di tambah");
+  //   } catch (error) {
+  //     console.log("error");
+  //     alert("ada masalah saat mengambil data")
+  //   }
+  // }
   async function updateMenu() {
     try {
       await axios.put("http://localhost:3001/users/" + formInput.id, formInput);
@@ -128,6 +129,8 @@ const ListMenu = () => {
         <br />
         <br />
         <button>Submit</button>
+        <span> </span>
+        <Link to={"add"}>Add Data</Link>
       </form>
       <br />
       <br />
