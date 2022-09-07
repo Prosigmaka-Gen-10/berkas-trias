@@ -23,7 +23,7 @@ const AddMenu = () => {
   async function createMenu() {
     try {
       await axios.post("http://localhost:3001/users", formInput);
-        navigate('/')
+      navigate("/");
       alert("data berhasil di tambah");
     } catch (error) {
       console.log("error");
@@ -81,7 +81,7 @@ const AddMenu = () => {
         </label>
         <br />
         <br />
-        <button>Submit</button> 
+        <button>Submit</button>
         <span> </span>
         <Link to={"/"}>Batal</Link>
       </form>
